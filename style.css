@@ -1,0 +1,209 @@
+body {
+    background-image: url(Art.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: cursive;
+    font-weight: 700px;
+    font-size: 400;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+  font-size: 80px;
+  text-align: center;
+  padding-top: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #00fff2;
+  color: #ffffff;
+  text-shadow: 2px 2px 20px rgba(0, 255, 229, 0.8);
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.10);
+  text-shadow: 2px 2px 30px rgba(0, 255, 229, 1);
+}
+
+.dav{
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 15px 20px;
+  font-size: 19px;
+  color: #00fff2;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 15px #00fff2;
+}
+
+input[type="text"]:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 229, 0.8);
+  transform: scale(1.02);
+  width: 500px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background: #00fff2;
+  color: rgb(30, 34, 34);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:  0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #00d8c4;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 229, 0.8);
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #00fff2;
+  text-shadow: 1px 1px 5px rgba(0, 255, 229, 0,7)
+  text-decoration: underline;
+}
+
+
+.about p{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.about{
+  max-width: 700px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 255, 229, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 255, 229, 0.4);
+}
+
+.about h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 255, 229, 0.7);
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e0ffff;
+}
+
+footer {
+  padding: 25px 15px;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #00fff2;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-top: 2px solid #00fff2;
+  box-shadow: 0 -4px 12px rgba(0, 255, 229, 0.2);
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  transition:  0.4s ease, transform 0.3s ease;
+}
+
+footer:hover {
+  background: rgba(0, 0, 0, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 -6px 20px rgba(0, 255, 229, 0.3);
+}
+
+footer p {
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+footer p:hover {
+  transform: scale(1.1);
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* ========== Small Devices (Phones) ========== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .about {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* ========== Medium Devices (Tablets) ========== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    font-size: 17px;
+  }
+
+  button {
+    padding: 14px 22px;
+    font-size: 17px;
+  }
+
+  .about {
+    max-width: 90%;
+    margin: 40px auto;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+
